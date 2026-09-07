@@ -1,6 +1,6 @@
 # Demand Forecasting & Market Basket Analysis
 
-A Python final-year project by **Billy Suryono Hadisahputra** that brings sales forecasting, product grouping, and purchase-pattern analysis into a Gradio interface.
+A Python demand forecasting application by **Billy Suryono Hadisahputra** that brings sales forecasting, product grouping, and purchase-pattern analysis into a Gradio interface.
 
 The project explores how historical transaction data can support inventory planning: estimate future product demand, compare forecasting approaches, and identify products that are purchased together.
 
@@ -32,13 +32,13 @@ flowchart LR
 
 | File | Purpose |
 | --- | --- |
-| `code/Proyek Akhir.py` | Monthly forecasting and analysis application |
-| `code/Proyek Akhir Quarterly.py` | Quarterly forecasting and analysis application |
+| `code/demand_forecasting_monthly.py` | Monthly forecasting and analysis application |
+| `code/demand_forecasting_quarterly.py` | Quarterly forecasting and analysis application |
 | `requirements.txt` | Dependencies inferred from source imports |
 
 ## Run locally
 
-Install Python and start a local MongoDB server at `mongodb://localhost:27017/`. Both applications use the `final_project` database, so they share stored history.
+Install Python and start a local MongoDB server at `mongodb://localhost:27017/`. The monthly and quarterly applications store their histories in separate local databases.
 
 From the repository root, create and activate a virtual environment:
 
@@ -46,13 +46,13 @@ From the repository root, create and activate a virtual environment:
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
-python "code/Proyek Akhir.py"
+python "code/demand_forecasting_monthly.py"
 ```
 
 For the quarterly version, run this instead:
 
 ```powershell
-python "code/Proyek Akhir Quarterly.py"
+python "code/demand_forecasting_quarterly.py"
 ```
 
 Open the local URL printed by Gradio. Upload a compatible sales workbook in the **Data Penjualan** tab, then use **Forecast** or **MBA Analysis**.
@@ -75,11 +75,11 @@ The importer was written for the original workbook's text and numeric convention
 
 ## Project status and limitations
 
-This repository presents the original academic prototype. The dependency list is not a lockfile; the original package versions were not recorded, and installation and end-to-end execution have not been validated for this portfolio release. Database access occurs during application startup, and the UI is intended for local use.
+This repository presents a forecasting prototype. The dependency list is not a lockfile; the original package versions were not recorded, and installation and end-to-end execution have not been validated for this portfolio release. Database access occurs during application startup, and the UI is intended for local use.
 
 The source demonstrates model implementation and comparison, but this README makes no claim that a particular model is best or that the system achieved a measured business improvement. Reproducing experimental results requires the original data and environment.
 
-Original sales workbooks, analysis exports, signed academic documents, backups, and third-party reference PDFs are excluded from publication. No original business or customer dataset is supplied.
+Original sales workbooks, analysis exports, private documents, backups, and third-party reference PDFs are excluded from publication. No original business or customer dataset is supplied.
 
 ## Technical skills demonstrated
 
