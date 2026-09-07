@@ -1,14 +1,24 @@
 # Publish only the reviewed portfolio files.
 /*
 !/.gitignore
+!/LICENSE
 !/README.md
 !/requirements.txt
 !/code/
 /code/*
 !/code/demand_forecasting_monthly.py
 !/code/demand_forecasting_quarterly.py
+!/docs/
+/docs/*
+!/docs/images/
+/docs/images/*
+!/docs/images/forecast-interface.png
+!/docs/images/model-comparison.png
+!/examples/
+/examples/*
+!/examples/README.md
 
-# Local environments, credentials, caches, and generated exports
+# Local environments, credentials, caches, and private workbooks
 .env
 .env.*
 .venv/
@@ -16,3 +26,6 @@ __pycache__/
 *.py[cod]
 *.xlsx
 *.xls
+
+# Explicit exception for fabricated demonstration data
+!/examples/synthetic_sales_demo.xlsx
