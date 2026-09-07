@@ -1,0 +1,16 @@
+# Inferred from source imports; original versions were not recorded.
+# Installation and runtime compatibility still need validation.
+gradio
+joblib
+keras
+mlxtend
+numpy
+openpyxl
+pandas
+prophet
+pymongo
+scikit-learn
+statsmodels
+tensorflow
+tqdm
+xlrd

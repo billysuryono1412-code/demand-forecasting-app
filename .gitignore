@@ -1,0 +1,18 @@
+# Publish only the reviewed portfolio files.
+/*
+!/.gitignore
+!/README.md
+!/requirements.txt
+!/code/
+/code/*
+!/code/Proyek Akhir.py
+!/code/Proyek Akhir Quarterly.py
+
+# Local environments, credentials, caches, and generated exports
+.env
+.env.*
+.venv/
+__pycache__/
+*.py[cod]
+*.xlsx
+*.xls
